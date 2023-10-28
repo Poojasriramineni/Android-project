@@ -1,4 +1,5 @@
 package com.example.retailermanagementplatform;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +12,7 @@ public class ManagerSignupActivity extends AppCompatActivity {
 
     private EditText usernameEditText;
     private EditText passwordEditText;
-    private Button signUpButton;
+    private Button signUpButton,backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,19 +23,21 @@ public class ManagerSignupActivity extends AppCompatActivity {
         usernameEditText = findViewById(R.id.editText);
         passwordEditText = findViewById(R.id.passwordEditText);
         signUpButton = findViewById(R.id.signUp_button);
+        backButton = findViewById(R.id.backButton);
 
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Handle the sign-up button click here
-                String username = usernameEditText.getText().toString();
-                String password = passwordEditText.getText().toString();
+                Intent intent = new Intent(ManagerSignupActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
-                // You can implement your sign-up logic here, e.g., send data to a server or save it locally.
-
-                // For now, let's display a toast message with the entered username and password.
-                String message = "Username: " + username + "\nPassword: " + password;
-                Toast.makeText(ManagerSignupActivity.this, message, Toast.LENGTH_SHORT).show();
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ManagerSignupActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
         });
     }

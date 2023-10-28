@@ -1,5 +1,6 @@
 package com.example.retailermanagementplatform;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,8 @@ public class LoginActivity extends Activity {
         emailEditText = findViewById(R.id.editText);
         passwordEditText = findViewById(R.id.editText2);
         loginButton = findViewById(R.id.loginButton);
+        Button salesPersonButton = findViewById(R.id.SalesPersonRegister);
+        Button managerButton = findViewById(R.id.managerRegister);
 
         // Set click listener for the login button
         loginButton.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +34,24 @@ public class LoginActivity extends Activity {
 
                 // You can add your login logic here
                 // For example, you can validate the email and password and authenticate the user
+            }
+        });
+
+        salesPersonButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Redirect to SalesPersonSignupActivity
+                Intent intent = new Intent(LoginActivity.this, SalesPersonSignUpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        managerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Redirect to ManagerSignupActivity
+                Intent intent = new Intent(LoginActivity.this, ManagerSignupActivity.class);
+                startActivity(intent);
             }
         });
     }

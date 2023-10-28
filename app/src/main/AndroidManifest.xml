@@ -21,6 +21,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SalesPersonSignUpActivity">
+        </activity>
+        <activity android:name=".TeamLayoutActivity">
+        </activity>
+        <activity android:name=".ManagerSignupActivity">
+        </activity>
     </application>
 
 </manifest>
