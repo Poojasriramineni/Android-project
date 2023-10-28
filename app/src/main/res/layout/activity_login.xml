@@ -45,13 +45,29 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Not a member yet?"
+        android:text="Are you a sales person or manager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.516" />
+
+    <Button
+        android:id="@+id/SalesPersonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SalesPerson"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <Button
+        android:id="@+id/managerRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manager"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="403dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
