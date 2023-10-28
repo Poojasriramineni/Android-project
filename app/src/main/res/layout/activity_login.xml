@@ -7,7 +7,7 @@
 
 
     <Button
-        android:id="@+id/editText"
+        android:id="@+id/loginButton"
         android:layout_width="173dp"
         android:layout_height="64dp"
         android:text="Login"
@@ -19,6 +19,7 @@
         app:layout_constraintVertical_bias="0.377" />
 
     <EditText
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter EmailId"
@@ -30,6 +31,7 @@
         app:layout_constraintVertical_bias="0.123" />
 
     <EditText
+        android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter Password"
