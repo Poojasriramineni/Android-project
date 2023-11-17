@@ -28,12 +28,13 @@ public class ChatRoom extends AppCompatActivity {
     private String SalespersonName;
     private String ManagerNumber;
     private DatabaseReference databaseReference, databaseReference1;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view_personal_chat);
 
-        recyclerView=findViewById(R.id.recylerview_message_list);
+        recyclerView = findViewById(R.id.recylerview_message_list);
         // getting salesperson name
         final Intent it = getIntent();
         SalespersonName = it.getStringExtra("Name");
@@ -54,15 +55,15 @@ public class ChatRoom extends AppCompatActivity {
                 databaseReference.child(ManagerNumber).addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        ArrayList<BaseMessage> mMessages=new ArrayList<>();
+                        ArrayList<BaseMessage> mMessages = new ArrayList<>();
 
-                        for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
+                        for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
 
                             BaseMessage bm = dataSnapshot1.getValue(BaseMessage.class);
                             mMessages.add(bm);
 
                         }
-                        messageListAdapter=new ChatRoomAdapter(getApplicationContext(),mMessages);
+                        messageListAdapter = new ChatRoomAdapter(getApplicationContext(), mMessages);
                         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
                         recyclerView.setAdapter(messageListAdapter);
                         messageListAdapter.notifyDataSetChanged();
@@ -140,7 +141,8 @@ public class ChatRoom extends AppCompatActivity {
                     });
 
                 }
-            }});
+            }
+        });
 
 
     }

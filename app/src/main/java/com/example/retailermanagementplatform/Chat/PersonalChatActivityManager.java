@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.LinearSmoothScroller;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.retailermanagementplatform.R;
+import com.example.retailermanagementplatform.SessionManager;
 
 import java.util.ArrayList;
 import java.util.HashMap;

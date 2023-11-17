@@ -23,6 +23,14 @@
         </activity>
         <activity android:name=".SalesPersonSignUpActivity">
         </activity>
+        <activity android:name=".Chat.PersonalChatActivityManager"
+            android:windowSoftInputMode="adjustPan"
+            android:label="Personal Chat"></activity>
+        <activity android:name=".Chat.PersonalChatActivitySalesperson"
+            android:label="Personal Chat"></activity>
+        <activity android:name=".Chat.ChatRoom"
+            android:windowSoftInputMode="adjustPan"
+            android:label="Chat Room"></activity>
         <activity android:name=".TeamLayoutActivity">
         </activity>
         <activity android:name=".ManagerSignupActivity">
