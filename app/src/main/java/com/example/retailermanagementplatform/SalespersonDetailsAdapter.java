@@ -1,4 +1,4 @@
-package com.example.merchantmanagement;
+package com.example.retailermanagementplatform;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,9 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-/**
- * Created by user on 9/22/18.
- */
+
 
 public class SalespersonDetailsAdapter extends RecyclerView.Adapter<SalespersonDetailsAdapter.MyViewHolder>{
 

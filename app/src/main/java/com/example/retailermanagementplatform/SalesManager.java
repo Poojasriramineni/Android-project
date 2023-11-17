@@ -1,10 +1,8 @@
-package com.example.merchantmanagement;
+package com.example.retailermanagementplatform;
 
 import java.util.ArrayList;
 
-/**
- * Created by user on 9/1/18.
- */
+
 
 public class SalesManager {
     private String name, number, password, email, orgName;

@@ -1,4 +1,3 @@
-package com.example.merchantmanagement;
 
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;

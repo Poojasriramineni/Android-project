@@ -1,4 +1,4 @@
-package com.example.merchantmanagement;
+package com.example.retailermanagementplatform;
 
 import android.content.Context;
 import android.view.View;

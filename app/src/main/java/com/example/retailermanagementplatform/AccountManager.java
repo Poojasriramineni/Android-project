@@ -1,4 +1,4 @@
-package com.example.merchantmanagement;
+package com.example.retailermanagementplatform;
 
 import android.app.ProgressDialog;
 import android.content.ContentResolver;

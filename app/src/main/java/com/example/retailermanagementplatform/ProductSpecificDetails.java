@@ -1,4 +1,4 @@
-package com.example.merchantmanagement;
+package com.example.retailermanagementplatform;
 
 import android.os.Bundle;
 import android.view.View;
@@ -21,9 +21,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 
-/**
- * Created by user on 9/22/18.
- */
+
 
 public class ProductSpecificDetails extends AppCompatActivity {
 
