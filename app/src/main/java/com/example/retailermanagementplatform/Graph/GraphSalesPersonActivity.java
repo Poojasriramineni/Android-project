@@ -9,7 +9,22 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.retailermanagementplatform.R;
+import com.example.retailermanagementplatform.SalesPerson;
 import com.example.retailermanagementplatform.SessionManager;
+import com.github.mikephil.charting.animation.Easing;
+import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.utils.ColorTemplate;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -75,7 +90,7 @@ public class GraphSalesPersonActivity extends AppCompatActivity {
                                 dataSet.setColors(ColorTemplate.VORDIPLOM_COLORS);
                                 BarData data = new BarData(dataSet);
                                 data.setBarWidth(0.9f); // set custom bar width
-                                barChart.animateY(3000, Easing.EasingOption.EaseInBounce);
+                                barChart.animateY(3000, Easing.EaseInBounce);
                                 barChart.setData(data);
                                 barChart.setFitBars(true); // make the x-axis fit exactly all bars
                                 barChart.invalidate(); // refresh

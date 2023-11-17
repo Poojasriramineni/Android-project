@@ -1,5 +1,6 @@
 package com.example.retailermanagementplatform.Graph;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -8,12 +9,24 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.retailermanagementplatform.InventoryItem;
 import com.example.retailermanagementplatform.R;
 import com.example.retailermanagementplatform.SessionManager;
+import com.github.mikephil.charting.charts.PieChart;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.github.mikephil.charting.animation.Easing;
+import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.data.PieEntry;
+import com.github.mikephil.charting.utils.ColorTemplate;
+
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -76,7 +89,7 @@ public class GraphManagerActivity extends AppCompatActivity {
                                 pieChart.invalidate(); // refresh
                                 pieChart.setCenterText("Your Profit\nAnalysis");
                                 pieChart.setCenterTextSize(20f);
-                                pieChart.animateXY(1000, 1000, Easing.EasingOption.EaseInOutCirc, Easing.EasingOption.EaseInOutCirc);
+                                pieChart.animateXY(1000, 1000, Easing.EaseInOutCirc, Easing.EaseInOutCirc);
                                 pieChart.setCenterTextColor(Color.WHITE);
                                 pieChart.setTransparentCircleColor(getResources().getColor(R.color.colorPrimary));
                                 pieChart.setHoleColor(getResources().getColor(R.color.colorPrimaryDark));
@@ -134,7 +147,7 @@ public class GraphManagerActivity extends AppCompatActivity {
                                                 pieChart.invalidate(); // refresh
                                                 pieChart.setCenterText("Your Profit\nAnalysis");
                                                 pieChart.setCenterTextSize(20f);
-                                                pieChart.animateXY(1000, 1000, Easing.EasingOption.EaseInOutCirc, Easing.EasingOption.EaseInOutCirc);
+                                                pieChart.animateXY(1000, 1000, Easing.EaseInOutCirc, Easing.EaseInOutCirc);
                                                 pieChart.setCenterTextColor(Color.BLACK);
                                                 pieChart.setTransparentCircleColor(Color.BLACK);
                                             }

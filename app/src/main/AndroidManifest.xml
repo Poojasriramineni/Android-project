@@ -35,6 +35,10 @@
         </activity>
         <activity android:name=".ManagerSignupActivity">
         </activity>
+
+
+        <activity android:name=".Graph.GraphSalespersonActivity"></activity>
+        <activity android:name=".Graph.GraphManagerActivity"></activity>
     </application>
 
 </manifest>
