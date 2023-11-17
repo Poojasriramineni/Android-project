@@ -1,3 +1,4 @@
+package com.example.retailermanagementplatform;
 
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
