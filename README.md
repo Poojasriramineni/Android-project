@@ -52,7 +52,7 @@ The Retailer Management Platform app is designed to run on Android devices with 
 - Writing modular and well-structured Java code following best practices.
 - Optimizing code for performance and efficiency.
 - Implementing design patterns to improve code maintainability.
-Sireesha Mamillapalli  Inventory, ProductSpecific details all supported  classes.
-*Sarvani Pera   Registration, LeaderBoard, MyTeam Module
-*Poojasri Ramineni  Graph Module
-*Aparna Marepally   Chat Module
+- Sireesha Mamillapalli  Inventory, ProductSpecific details all supported  classes.
+- Sarvani Pera   Registration, LeaderBoard, MyTeam Module
+- Poojasri Ramineni  Graph Module
+- Aparna Marepally   Chat Module
