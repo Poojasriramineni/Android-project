@@ -28,9 +28,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
-/**
- * Created by user on 9/26/18.
- */
+
 
 public class LeaderBoardSalesperson extends AppCompatActivity {
 

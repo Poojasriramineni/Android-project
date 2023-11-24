@@ -1,4 +1,4 @@
-package com.example.merchantmanagement.Leaderboard;
+package com.example.retailermanagementplatform.LeaderBoard;
 
 import android.content.Context;
 import android.util.Pair;

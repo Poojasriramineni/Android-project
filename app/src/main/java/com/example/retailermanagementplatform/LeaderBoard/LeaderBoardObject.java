@@ -1,8 +1,6 @@
 package com.example.merchantmanagement.Leaderboard;
 
-/**
- * Created by user on 9/26/18.
- */
+
 
 public class LeaderBoardObject {
     private String SalespersonName, timestamp;
