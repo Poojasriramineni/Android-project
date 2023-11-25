@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "741422561637",
+    "project_id": "retailer-management-platform",
+    "storage_bucket": "retailer-management-platform.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741422561637:android:6791b12322eeeb0e4b098c",
+        "android_client_info": {
+          "package_name": "com.example.retailermanagementplatform"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX6_0Qb7Mz_ZCbYvOKif_NL1Mva6IZ8bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

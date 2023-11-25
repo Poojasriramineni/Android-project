@@ -1,4 +1,4 @@
-package com.example.merchantmanagement.Leaderboard;
+package com.example.retailermanagementplatform.LeaderBoard;
 
 import android.os.Bundle;
 import android.view.View;
@@ -12,10 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.merchantmanagement.InventoryItem;
-import com.example.merchantmanagement.R;
-import com.example.merchantmanagement.SalesPerson;
-import com.example.merchantmanagement.SessionManager;
+import com.example.retailermanagementplatform.InventoryItem;
+import com.example.retailermanagementplatform.R;
+import com.example.retailermanagementplatform.SalesPerson;
+import com.example.retailermanagementplatform.SessionManager;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -194,7 +194,7 @@ public class LeaderBoardSalesperson extends AppCompatActivity {
                 Long signupTimeInSecs = 0L;
                 for(DataSnapshot dataSnapshot3 : dataSnapshot.getChildren()){
 
-                    LeaderBoardObject leaderBoardObject = dataSnapshot3.getValue(LeaderBoardObject.class);
+                    com.example.merchantmanagement.Leaderboard.LeaderBoardObject leaderBoardObject = dataSnapshot3.getValue(com.example.merchantmanagement.Leaderboard.LeaderBoardObject.class);
 
                     if(leaderBoardObject.getSalespersonName().equals(name)){
 

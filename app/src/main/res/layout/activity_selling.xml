@@ -16,14 +16,17 @@
         android:ems="10"
         />
 
-    <com.alexzaitsev.meternumberpicker.MeterView
-        android:id="@+id/sold_number"
-        style="@style/MeterViewStyle"
-        android:layout_gravity="center"
-        android:layout_margin="25dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:textColorHint="@color/colorPrimary"
+        android:inputType="text|number"
+        android:textColor="#fff"
+        android:layout_weight="0.03"
+        android:hint="Item Quantity"
+        android:layout_margin="4dp"/>
     <Button
         android:id="@+id/ok"
         android:layout_width="match_parent"
@@ -32,7 +35,7 @@
         android:text="ok"
         android:clickable="true"
         android:textSize="20sp"
-        android:background="#db3236"
+        android:background="#E11010"
         android:textColor="#FFFFFF"/>
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.merchantmanagement.MyTeam;
+package com.example.retailermanagementplatform.MyTeam;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,9 +9,9 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.example.merchantmanagement.ImageSetter;
-import com.example.merchantmanagement.R;
-import com.example.merchantmanagement.SalesPerson;
+import com.example.retailermanagementplatform.ImageSetter;
+import com.example.retailermanagementplatform.R;
+import com.example.retailermanagementplatform.SalesPerson;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.example.merchantmanagement.MyTeam;
+package com.example.retailermanagementplatform.MyTeam;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -18,12 +18,12 @@ import com.baoyz.swipemenulistview.SwipeMenu;
 import com.baoyz.swipemenulistview.SwipeMenuCreator;
 import com.baoyz.swipemenulistview.SwipeMenuItem;
 import com.baoyz.swipemenulistview.SwipeMenuListView;
-import com.example.merchantmanagement.Chat.PersonalChatActivityManager;
-import com.example.merchantmanagement.ImageSetter;
-import com.example.merchantmanagement.R;
-import com.example.merchantmanagement.SalesManager;
-import com.example.merchantmanagement.SalesPerson;
-import com.example.merchantmanagement.SessionManager;
+import com.example.retailermanagementplatform.Chat.PersonalChatActivityManager;
+import com.example.retailermanagementplatform.ImageSetter;
+import com.example.retailermanagementplatform.R;
+import com.example.retailermanagementplatform.SalesManager;
+import com.example.retailermanagementplatform.SalesPerson;
+import com.example.retailermanagementplatform.SessionManager;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

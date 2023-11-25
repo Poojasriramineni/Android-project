@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/login_gradient"
 
-    tools:context=".Registration.SignUpSalesManager">
+    tools:context=".ManagerSignupActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -94,7 +94,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/emailid"
                     android:layout_width="match_parent"
-                    android:layout_height="49dp"
+                    android:layout_height="57dp"
                     android:layout_marginTop="25dp"
                     android:hint="Email-ID"
                     android:inputType="textEmailAddress"

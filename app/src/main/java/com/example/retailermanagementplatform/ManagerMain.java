@@ -27,10 +27,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.alexzaitsev.meternumberpicker.MeterView;
-import com.example.merchantmanagement.Chat.ChatRoom;
-import com.example.merchantmanagement.Graph.GraphManagerActivity;
-import com.example.merchantmanagement.MyTeam.MyTeam;
+import com.example.retailermanagementplatform.MyTeam.MyTeam;
+import com.example.retailermanagementplatform.Chat.ChatRoom;
+import com.example.retailermanagementplatform.Graph.GraphManagerActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.database.DataSnapshot;
@@ -51,8 +50,7 @@ import java.util.HashMap;
 public class ManagerMain extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
 
-    private EditText itemName, profit;
-    private MeterView q;
+    private EditText itemName, profit, q;
     private DatabaseReference databaseRef;
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
@@ -137,7 +135,7 @@ public class ManagerMain extends AppCompatActivity
                     public void onClick(View view) {
 
                         String item = itemName.getText().toString();
-                        String q1 = String.valueOf(q.getValue());
+                        String q1 = q.getText().toString();
                         int profitAmount = Integer.parseInt(profit.getText().toString());
 
                         if(TextUtils.isEmpty(item) || TextUtils.isEmpty(q1))
@@ -443,7 +441,7 @@ public class ManagerMain extends AppCompatActivity
                         mRecyclerView.setAdapter(mAdapter);
                         mAdapter.notifyDataSetChanged();
                         if(spin==true)
-                        spinner.setVisibility(View.GONE);
+                            spinner.setVisibility(View.GONE);
                     }
                     @Override
                     public void onCancelled(DatabaseError databaseError) {

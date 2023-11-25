@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -30,11 +31,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.alexzaitsev.meternumberpicker.MeterView;
-import com.example.merchantmanagement.Chat.ChatRoom;
-import com.example.merchantmanagement.Chat.PersonalChatActivitySalesperson;
-import com.example.merchantmanagement.Graph.GraphSalesperson;
-import com.example.merchantmanagement.Graph.GraphSalespersonActivity;
-import com.example.merchantmanagement.Leaderboard.LeaderBoardSalesperson;
+import com.example.retailermanagementplatform.Chat.ChatRoom;
+import com.example.retailermanagementplatform.Chat.PersonalChatActivitySalesperson;
+import com.example.retailermanagementplatform.Graph.GraphSalesPerson;
+import com.example.retailermanagementplatform.Graph.GraphSalesPersonActivity;
+import com.example.retailermanagementplatform.LeaderBoard.LeaderBoardSalesperson;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.database.DataSnapshot;
@@ -100,10 +101,10 @@ public class SalespersonMain extends AppCompatActivity
                 final AlertDialog.Builder mBuilder = new AlertDialog.Builder(SalespersonMain.this);
                 final View mView = getLayoutInflater().inflate(R.layout.activity_selling, null);
                 final AutoCompleteTextView autoCompleteTextView;
-                final MeterView numberPicker;
+                final EditText numberPicker;
                 Button ok = (Button) mView.findViewById(R.id.ok);
                 autoCompleteTextView = mView.findViewById(R.id.autoCompleteTextView1);
-                numberPicker=mView.findViewById(R.id.sold_number);
+                numberPicker=mView.findViewById(R.id.quantity);
 
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(mView.getContext(), androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,itemlist);
 
@@ -119,7 +120,7 @@ public class SalespersonMain extends AppCompatActivity
                     public void onClick(View v) {
                         // do selling work here
 
-                        sold = numberPicker.getValue();
+                        sold = Integer.parseInt(numberPicker.getText().toString());
                         final String itemName = autoCompleteTextView.getText().toString();
 
                         if(TextUtils.isEmpty(itemName) || sold==0)
@@ -183,7 +184,7 @@ public class SalespersonMain extends AppCompatActivity
                                                                     {
                                                                         System.out.println(salespersonName+" "+String.valueOf(it1.getProfit()*sold));
                                                                     }
-                                                                    GraphSalesperson.create(String.valueOf(it1.getProfit()*sold), salespersonName);
+                                                                    GraphSalesPerson.create(String.valueOf(it1.getProfit()*sold), salespersonName);
                                                                 }
 
                                                                 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -464,7 +465,7 @@ public class SalespersonMain extends AppCompatActivity
 
         } else if (id1 == R.id.statistics) {
 
-            Intent intent=new Intent(SalespersonMain.this, GraphSalespersonActivity.class);
+            Intent intent=new Intent(SalespersonMain.this, GraphSalesPersonActivity.class);
             startActivity(intent);
 
         } else if (id1 == R.id.nav_share) {

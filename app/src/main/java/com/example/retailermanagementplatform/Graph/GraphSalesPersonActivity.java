@@ -90,7 +90,7 @@ public class GraphSalesPersonActivity extends AppCompatActivity {
                                 dataSet.setColors(ColorTemplate.VORDIPLOM_COLORS);
                                 BarData data = new BarData(dataSet);
                                 data.setBarWidth(0.9f); // set custom bar width
-                                barChart.animateY(3000, Easing.EaseInBounce);
+                                barChart.animateY(3000, Easing.EasingOption.EaseInBounce);
                                 barChart.setData(data);
                                 barChart.setFitBars(true); // make the x-axis fit exactly all bars
                                 barChart.invalidate(); // refresh

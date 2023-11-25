@@ -89,7 +89,7 @@ public class GraphManagerActivity extends AppCompatActivity {
                                 pieChart.invalidate(); // refresh
                                 pieChart.setCenterText("Your Profit\nAnalysis");
                                 pieChart.setCenterTextSize(20f);
-                                pieChart.animateXY(1000, 1000, Easing.EaseInOutCirc, Easing.EaseInOutCirc);
+                                pieChart.animateXY(1000, 1000, Easing.EasingOption.EaseInOutCirc, Easing.EasingOption.EaseInOutCirc);
                                 pieChart.setCenterTextColor(Color.WHITE);
                                 pieChart.setTransparentCircleColor(getResources().getColor(R.color.colorPrimary));
                                 pieChart.setHoleColor(getResources().getColor(R.color.colorPrimaryDark));
@@ -147,7 +147,7 @@ public class GraphManagerActivity extends AppCompatActivity {
                                                 pieChart.invalidate(); // refresh
                                                 pieChart.setCenterText("Your Profit\nAnalysis");
                                                 pieChart.setCenterTextSize(20f);
-                                                pieChart.animateXY(1000, 1000, Easing.EaseInOutCirc, Easing.EaseInOutCirc);
+                                                pieChart.animateXY(1000, 1000, Easing.EasingOption.EaseInOutCirc, Easing.EasingOption.EaseInOutCirc);
                                                 pieChart.setCenterTextColor(Color.BLACK);
                                                 pieChart.setTransparentCircleColor(Color.BLACK);
                                             }

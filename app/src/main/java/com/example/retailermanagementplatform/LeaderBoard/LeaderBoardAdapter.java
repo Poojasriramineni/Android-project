@@ -12,9 +12,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.merchantmanagement.ImageSetter;
-import com.example.merchantmanagement.R;
-import com.example.merchantmanagement.SalesPerson;
+
+import com.example.retailermanagementplatform.ImageSetter;
+import com.example.retailermanagementplatform.R;
+import com.example.retailermanagementplatform.SalesPerson;
 
 import java.util.ArrayList;
 import java.util.Collections;
