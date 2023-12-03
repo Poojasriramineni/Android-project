@@ -2,6 +2,10 @@
 # Retailer Management Platform
  
 An Android application for retailers. Integrated with Firebase for user authentication.
+
+# Official URL for your project
+
+https://github.com/Poojasriramineni/Android-project
  
  
 ## Features
